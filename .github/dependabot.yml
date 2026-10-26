@@ -1,0 +1,16 @@
+version: 2
+multi-ecosystem-groups:
+  weekly:
+    schedule:
+      interval: weekly
+      day: monday
+      time: "08:00"
+updates:
+  - package-ecosystem: npm
+    directory: /
+    patterns: ["*"]
+    multi-ecosystem-group: weekly
+  - package-ecosystem: github-actions
+    directory: /
+    patterns: ["*"]
+    multi-ecosystem-group: weekly

@@ -1,0 +1,68 @@
+[[check]]
+id = "quality"
+rules = ["C2", "C3", "C7", "C10", "C23"]
+run = "npm run ci"
+output = "exit"
+
+[[check]]
+id = "file-length"
+rules = ["C23"]
+run = "scripts/check-file-length.sh"
+output = "exit"
+
+[[check]]
+id = "pr-size"
+rules = ["C7"]
+run = "scripts/check-pr-size.sh"
+output = "exit"
+# The initial reviewed snapshot is committed directly to the new main branch; this gate covers later PRs.
+on = "pull_request"
+
+[[waive]]
+rule = "C1"
+reason = "Domain code is pure and reviewed; the initial extension has no language-specific mutation rule yet."
+
+[[waive]]
+rule = "C4"
+reason = "The starter keeps Chrome APIs in src/popup and has no separate API or route modules."
+
+[[waive]]
+rule = "C5"
+reason = "Browser and DOM effects are isolated to src/popup; no language-specific effect rule exists yet."
+
+[[artifact]]
+heading = "TL;DR (for humans)"
+rules = ["C39"]
+first = true
+
+[[artifact]]
+heading = "Problem"
+rules = ["C11"]
+
+[[artifact]]
+heading = "Data design"
+rules = ["C12"]
+
+[[artifact]]
+heading = "Reuse"
+rules = ["C16"]
+
+[[artifact]]
+heading = "Alternatives"
+rules = ["C17"]
+
+[[artifact]]
+heading = "Rule conflicts"
+rules = ["C18"]
+
+[[artifact]]
+heading = "Performance"
+rules = ["C28", "C29"]
+
+[[artifact]]
+heading = "Scope"
+rules = ["C30", "C32"]
+
+[[artifact]]
+heading = "Proof"
+rules = ["C37"]

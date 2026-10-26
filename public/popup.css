@@ -1,0 +1,57 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 280px;
+  padding: 20px;
+}
+
+main {
+  display: grid;
+  gap: 12px;
+}
+
+.eyebrow {
+  color: #5472e8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+#result {
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+button {
+  background: #3157d5;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 650;
+  padding: 10px 12px;
+}
+
+button:focus-visible {
+  outline: 3px solid #8ba2ff;
+  outline-offset: 2px;
+}
