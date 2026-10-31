@@ -1,9 +1,21 @@
-# Security policy
+# Security Policy
 
-Use the latest version of this starter when reporting a security issue.
+## Supported Versions
 
-Please do not open a public issue for an undisclosed vulnerability. Contact the
-maintainer privately through GitHub's security advisory feature.
+| Version        | Supported           |
+| -------------- | ------------------- |
+| Latest minor   | Yes                 |
+| Previous minor | Security fixes only |
+| Older          | No                  |
 
-The example requests only the `activeTab` permission and does not send page data
-to a remote service. Review permissions and data flows before adding features.
+## Reporting a Vulnerability
+
+**Please do not open a public GitHub issue for security vulnerabilities.**
+
+Email **oleg@bizcuit.nl** with:
+
+1. A description of the vulnerability and its potential impact
+2. Steps to reproduce or a proof-of-concept
+3. Any suggested fixes (optional but appreciated)
+
+You will receive an acknowledgement within 48 hours and a resolution timeline within 7 days.
